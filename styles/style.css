@@ -1,0 +1,160 @@
+* {
+  background-color: #E9E9E4;
+  padding : 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: reitam, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-size: 2.8vw;
+  line-height: 10.5vh;
+}
+
+.wrapper--top {
+  background-image: url(/images/bg_illust.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35%;
+}
+
+.header {
+  display: flex;
+  color: #fff;
+  text-align: center;
+  padding: 30px 36px 0 36px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 100;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header_inner_list {
+  right: 5.5vw;
+  line-height: 4.5vw;
+  text-decoration: none;
+  display: flex;
+}
+
+.header_inner_listItem {
+  margin-left: 2vw;
+  font-size: 2.8vw;
+  line-height: 10.5vh;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header_inner_listItem a {
+  color: #a28d69;
+  font-size: 1.2vw;
+  text-decoration: none;
+}
+
+.main_h2_title {
+  color: #a28d69;
+  font-size: 2vw;
+}
+
+.main_p_explanation {
+  color: #000;
+  font-size: 1vw;
+}
+
+.mainVisual_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  left: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+
+.wrapper--top .mainVisual_inner {
+  display: block;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/mainVisual.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mainVisual_logo {
+  font-size: 2.25vw;
+}
+
+.mainVisual_sentence {
+  font-size: 1.5vw;
+  margin-top: 2vh;
+}
+
+.main_home_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.main_home_listitem {
+  width: 42%;
+  margin: 0 4% 4% 4%;
+}
+
+.main_home_listitem:hover {
+  opacity: 0.3;
+}
+
+.main_home_listitem a {
+  color: #000;
+  font-size: 1.5vw;
+  line-height: 5vh;
+}
+
+.main_home_listitem img {
+  width: 100%;
+}
+
+
+/* フッター */
+.footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  margin-top: 20vh;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer p {
+  background-color: #000000;
+  color: #f5f5f5;
+}
