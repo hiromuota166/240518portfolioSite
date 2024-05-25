@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太田啓夢</title>
+    <link rel="stylesheet" href="styles/reset.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="google-site-verification" content="tuHWtjEYbjbvRhV8m_pXuitDzeuzodNAcge9xkNjPa8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Reddit+Mono:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top">
+    <header class="header">
+      <div class="header_inner">
+        <a href="/index.html" class="header_logo" title="icon">
+          <img src="" alt="">
+        </a>
+        <ul class="header_inner_list">
+          <li class="header_inner_listItem header_inner_listItem--home">
+            <a href="/index.html" title="home">HOME</a>
+          </li>
+          <li class="header_inner_listItem header_inner_listItem--about">
+            <a href="/about.html" title="about">ABOUT</a>
+          </li>
+          <li class="header_inner_listItem header_inner_listItem--contact">
+            <a href="/contact.html" title="contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="about_main">
+      <div class="about_main_left">
+        <img src="/image/JapanJam.JPG" alt="ジャパンジャムに行った俺" class="about_my_img">
+      </div>
+      <div class="about_main_right">
+        <div class="about_main_name_en">Ota Hiromu</div>
+        <div class="about_main_name_ja">太田啓夢</div>
+        <div class="about_main_info">
+          <div class="about_date">BIRTHDAY/2003/4/18</div>
+          <div class="about_from">BIRTHPLACE/北海道</div>
+        </div>
+      </div>
+    </div>
+    <div class="about_main_slide_container">
+      <div class="about_main_slide">
+        <div class="about_main_slide_item about_main_slide_1">
+          <div class="slide_text">Slide 1 Content</div>
+        </div>
+        <div class="about_main_slide_item about_main_slide_2">
+          <div class="slide_text">Slide 2 Content</div>
+        </div>
+        <div class="about_main_slide_item about_main_slide_3">
+          <div class="slide_text">Slide 3 Content</div>
+        </div>
+        <!-- 以下同様にスライドアイテムを追加 -->
+        <div class="about_main_slide_item about_main_slide_15">
+          <div class="slide_text">Slide 15 Content</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.about_main_slide_item');
+  const slideContainer = document.querySelector('.about_main_slide');
+
+  function showSlide(index) {
+    const totalSlides = slides.length;
+    currentIndex = (index + totalSlides) % totalSlides;
+    const offset = -currentIndex * 100;
+    slideContainer.style.transform = `translateX(${offset}%)`;
+  }
+
+  document.querySelector('.about_main_slide_container').addEventListener('click', () => {
+    showSlide(currentIndex + 1);
+  });
+
+  // 初期スライドを表示
+  showSlide(currentIndex);
+</script>
+</html>
